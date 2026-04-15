@@ -1,0 +1,21 @@
+[package]
+name = "webrtc-benchmark"
+version = "0.1.0"
+edition = "2021"
+authors = ["V100 Engineering <engineering@v100.ai>"]
+description = "Open-source benchmarking toolkit for WebRTC TURN/STUN servers"
+homepage = "https://v100.ai"
+repository = "https://github.com/H33ai-postquantum/webrtc-benchmark"
+license = "MIT"
+readme = "README.md"
+keywords = ["webrtc", "stun", "turn", "benchmark", "latency"]
+categories = ["command-line-utilities", "network-programming"]
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = { version = "0.4", features = ["serde"] }
+tabled = "0.15"
+byteorder = "1"
